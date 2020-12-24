@@ -1,7 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from .views import weatherview
+
+from . import views
 
 urlpatterns = [
-    path('', weatherview),
+    path('', views.weatherview, name='weather'),
+    path('about.html', views.about, name='about'),
 ]
