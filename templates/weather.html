@@ -1,7 +1,27 @@
 <!-- <title>My WeatherApp</title> -->
 {% extends 'base.html' %}
-
 {% block content %}
-    <h1>Welcome to my WeatherApp</h1>
-{% endblock content %}
-
+<br>
+<h1>Welcome to My Weather App</h1>
+<p>These data are retrieved from
+    <a href="https://www.airnow.gov/?city=Oklahoma%20City&state=OK&country=USA" target="_blank">AirNow.org</a>.
+</p>
+<br> <br>
+{%if api %}
+{% if api == "Error ..." %}
+There was an error. Please try again.
+{% else %}
+<div class="jumbotron {{ category_color }}" style="padding: 24px 0 0 16px; color: #fff; border-radius: 20px;">
+    <h1 class="display-4">{{api.0.Category.Name}}</h1>
+    <p class="lead" style="font-size: 24px;"><strong>Current {{api.0.ReportingArea}} Air Quality: {{api.0.AQI}}.</strong></p>
+    <hr class="my-4">
+    <p>
+        <strong>{{category_description}}</strong>
+    </p>
+    <p>Date Observed: {{api.0.DateObserved}}</p>
+    <br>
+</div>
+<br>
+{% endif %}
+{% endif %}
+{% endblock content%}

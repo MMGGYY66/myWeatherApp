@@ -1,0 +1,83 @@
+[
+  {
+    "DateObserved": "2020-12-25 ",
+
+    "HourObserved": 4,
+
+    "LocalTimeZone": "CST",
+
+    "ReportingArea": "Oklahoma City",
+
+    "StateCode": "OK",
+
+    "Latitude": 35.467,
+
+    "Longitude": -97.513,
+
+    "ParameterName": "O3",
+
+    "AQI": 18,
+
+    "Category": {
+
+      "Number": 1,
+
+      "Name": "Good"
+    }
+  },
+
+  {
+    "DateObserved": "2020-12-25 ",
+
+    "HourObserved": 4,
+
+    "LocalTimeZone": "CST",
+
+    "ReportingArea": "Oklahoma City",
+
+    "StateCode": "OK",
+
+    "Latitude": 35.467,
+
+    "Longitude": -97.513,
+
+    "ParameterName": "PM2.5",
+
+    "AQI": 68,
+
+    "Category": {
+
+      "Number": 2,
+
+      "Name": "Moderate"
+
+    }
+  },
+
+  {
+    "DateObserved": "2020-12-25 ",
+
+    "HourObserved": 4,
+
+    "LocalTimeZone": "CST",
+
+    "ReportingArea": "Oklahoma City",
+
+    "StateCode": "OK",
+
+    "Latitude": 35.467,
+
+    "Longitude": -97.513,
+
+    "ParameterName": "PM10",
+
+    "AQI": 32,
+
+    "Category": {
+
+      "Number": 1,
+
+      "Name": "Good"
+    }
+  }
+]
